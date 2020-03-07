@@ -1,4 +1,4 @@
-const strength = 50;
+const strength = 100;
 
 const getStrengthScore = () => strength;
 
