@@ -1,13 +1,16 @@
-import playData from '../../helpers/data/playData';
-import utils from '../../helpers/utils';
+import petData from '../../helpers/data/petData';
+import './play.scss';
 
 const buildPlayComponent = () => {
-  let domString = '<h2>PLAY</h2>';
-  domString += '<h3>Rosie</h3>';
-  domString += `<p>${playData.getFunScore()}</p>`;
+  const pet = petData.getPetData();
+  let domString = '<div>';
+  domString = '<h2>PLAY</h2>';
+  domString += `<h3>${pet.name}</h3>`;
+  domString += `<p>${pet.funScore}</p>`;
   domString += '<button id="superFun">Super Fun Activity</button>';
   domString += '<button id="slightlyFun">Just Slightly Fun Activity</button>';
-  utils.printToDom('play', domString);
+  domString += '</div>';
+  return domString;
 };
 
 export default { buildPlayComponent };

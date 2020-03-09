@@ -1,0 +1,12 @@
+.pet-container {
+  display: flex;
+	flex-flow: row wrap;
+	}
+
+	.pet-quadrant {
+		border: small lightslategray;
+		border-style: inset;
+		width: 40%;
+		padding: 1%;
+		color: white;
+	}
