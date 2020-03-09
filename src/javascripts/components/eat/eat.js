@@ -4,8 +4,8 @@ import './eat.scss';
 
 const buildEatComponent = () => {
   const pet = petData.getPetData();
-  let domString = '<div>';
-  domString = '<h2>EAT</h2>';
+  let domString = '<div class="eat pet-quadrant">';
+  domString += '<h2>EAT</h2>';
   domString += `<h3>${pet.name}</h3>`;
   domString += `<p>${pet.fullScore}</p>`;
   domString += '<button id="healthy">Healthy Food</button>';

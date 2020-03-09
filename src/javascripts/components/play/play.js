@@ -3,7 +3,7 @@ import './play.scss';
 
 const buildPlayComponent = () => {
   const pet = petData.getPetData();
-  let domString = '<div>';
+  let domString = '<div class="play pet-quadrant">';
   domString = '<h2>PLAY</h2>';
   domString += `<h3>${pet.name}</h3>`;
   domString += `<p>${pet.funScore}</p>`;

@@ -1,7 +1,7 @@
 const pet = {
   id: 'pet1',
   name: 'Rosie',
-  fullScore: 10,
+  fullScore: 100,
   funScore: 50,
   strengthScore: 100,
   energyScore: 50,
