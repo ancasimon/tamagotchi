@@ -1,5 +1,5 @@
-import fightData from '../helpers/data/fightData';
-import utils from '../helpers/utils';
+import fightData from '../../helpers/data/fightData';
+import utils from '../../helpers/utils';
 
 const buildFightComponent = () => {
   let domString = '<h2>FIGHT</h2>';

@@ -1,5 +1,5 @@
-import playData from '../helpers/data/playData';
-import utils from '../helpers/utils';
+import playData from '../../helpers/data/playData';
+import utils from '../../helpers/utils';
 
 const buildPlayComponent = () => {
   let domString = '<h2>PLAY</h2>';
