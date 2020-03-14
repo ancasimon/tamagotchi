@@ -11,18 +11,10 @@ import './petContainer.scss';
 
 const buildPetContainer = () => {
   let domString = '<div class="pet-container">';
-  domString += '<div>';
   domString += eat.buildEatComponent();
-  domString += '</div>';
-  domString += '<div>';
   domString += play.buildPlayComponent();
-  domString += '</div>';
-  domString += '<div>';
   domString += fight.buildFightComponent();
-  domString += '</div>';
-  domString += '<div>';
   domString += sleep.buildSleepComponent();
-  domString += '</div>';
   domString += '</div>';
   utils.printToDom('app', domString);
 };

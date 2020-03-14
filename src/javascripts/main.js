@@ -1,6 +1,6 @@
 // import petData from './helpers/data/petData';
 import 'jquery';
-// import eat from './components/eat/eat';
+import eat from './components/eat/eat';
 import petContainer from './components/petContainer/petContainer';
 // import play from './components/play/play';
 // import fight from './components/fight/fight';
@@ -72,7 +72,7 @@ import '../styles/main.scss';
 const init = () => {
   // petData.getPetData();
   // eat.buildEatComponent();
-  // eat.buttonEvents();
+  eat.buttonEvents();
   petContainer.buildPetContainer();
   // play.buildPlayComponent();
   // fight.buildFightComponent();
