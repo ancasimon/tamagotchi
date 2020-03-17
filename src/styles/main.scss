@@ -3,3 +3,20 @@
 body {
 	background-color: plum;
 }
+#app {
+  display: flex;
+	flex-flow: row wrap;
+	.quad {
+		border: lightslategray;
+		// border-style: inset;
+		width: 50%;
+		color: white;
+		.pet-quadrant {
+			padding: 5%;
+		}
+		}
+	}
+
+
+
+
