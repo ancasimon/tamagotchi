@@ -1,7 +1,7 @@
 # Tamagotchi
 
 ## Description
-This project is an exploration into using SCSS exclusively and continuing to hone our skills for structuring project files. It replicates a simple version of the 1990s' Tamagochi vitrual pest and their favorite activities. Users can record if their pet has eaten, played, fought, or slept, and each activity gets rewarded appropriately. Project instructions can be found [here](https://github.com/nss-nightclass-projects/exercise-vault/blob/master/MODULES_tamagotchi.md).
+This project is an exploration into exclusively using SCSS, learning to run Webpack installs, and continuing to hone our skills for structuring project files following ES6 module setup. It replicates a simple version of the 1990s' Tamagochi virtual pet and their favorite activities. Users can record if their pet has eaten, played, fought, or slept, and each activity gets rewarded appropriately, which affects the pet’s total score for each activity. Project instructions can be found [here](https://github.com/nss-nightclass-projects/exercise-vault/blob/master/MODULES_tamagotchi.md).
 
 ## Screenshots
 ##### Home Page
