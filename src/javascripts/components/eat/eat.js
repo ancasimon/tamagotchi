@@ -1,6 +1,6 @@
 import petData from '../../helpers/data/petData';
-// import utils from '../../helpers/utils';
 import './eat.scss';
+import utils from '../../helpers/utils';
 
 const buildEatComponent = () => {
   const pet = petData.getPetData();
@@ -11,12 +11,18 @@ const buildEatComponent = () => {
   domString += '<button id="healthy">Healthy Food</button>';
   domString += '<button id="junk">Junk Food</button>';
   domString += '</div>';
-  return domString;
+  utils.printToDom('eat', domString);
 };
 
-const buttonEvents = () => {
-  $('body').on('click', '#healthy', petData.setFullScore());
-  $('body').on('click', '#junk', petData.setFullScore());
+const eatEvent = (e) => {
+  const buttonId = e.target.id;
+  petData.setFullScore(buttonId);
+  buildEatComponent();
 };
 
-export default { buildEatComponent, buttonEvents };
+const eatButtonEvents = () => {
+  $('body').on('click', '#healthy', eatEvent);
+  $('body').on('click', '#junk', eatEvent);
+};
+
+export default { buildEatComponent, eatButtonEvents };

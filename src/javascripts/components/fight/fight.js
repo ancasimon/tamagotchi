@@ -1,5 +1,5 @@
 import petData from '../../helpers/data/petData';
-
+import utils from '../../helpers/utils';
 import './fight.scss';
 
 const buildFightComponent = () => {
@@ -11,7 +11,18 @@ const buildFightComponent = () => {
   domString += '<button id="ran">Ran</button>';
   domString += '<button id="violence">Committed Violence</button>';
   domString += '</div>';
-  return domString;
+  utils.printToDom('fight', domString);
 };
 
-export default { buildFightComponent };
+const fightEvent = (e) => {
+  const buttonId = e.target.id;
+  petData.setStrengthScore(buttonId);
+  buildFightComponent();
+};
+
+const fightButtonEvents = () => {
+  $('body').on('click', '#ran', fightEvent);
+  $('body').on('click', '#violence', fightEvent);
+};
+
+export default { buildFightComponent, fightButtonEvents };

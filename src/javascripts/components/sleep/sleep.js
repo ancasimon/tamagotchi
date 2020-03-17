@@ -1,5 +1,5 @@
 import petData from '../../helpers/data/petData';
-
+import utils from '../../helpers/utils';
 import './sleep.scss';
 
 const buildSleepComponent = () => {
@@ -11,7 +11,19 @@ const buildSleepComponent = () => {
   domString += '<button id="nap">Napped!</button>';
   domString += '<button id="slumber">Really slept!!</button>';
   domString += '</div>';
-  return domString;
+  utils.printToDom('sleep', domString);
 };
 
-export default { buildSleepComponent };
+const sleepEvent = (e) => {
+  const buttonId = e.target.id;
+  petData.setEnergyScore(buttonId);
+  buildSleepComponent();
+};
+
+const sleepButtonEvents = () => {
+  $('body').on('click', '#nap', sleepEvent);
+  $('body').on('click', '#slumber', sleepEvent);
+};
+
+
+export default { buildSleepComponent, sleepButtonEvents };
